@@ -1,0 +1,184 @@
+:root {
+  --form-width: 80vw;
+  --max-form-width: 380px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+}
+
+body {
+  background-image: url("blue-img.png"), url("green-img.png"), url("pink-img.png"), url("purple-img.png");
+  background-size: 15%, 15%, 15%, 15%;
+  background-position: left -1% top -13.5%, right -10.5% top 0%,
+    left -5% bottom -10%, right -8% bottom -5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-color: #062863;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 48px 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.signup-container .signup-contents form .form-input .select-box .options-container .selected,
+.signup-container .signup-contents form .form-input .select-box .options-container .option {
+  padding: 16px;
+  cursor: pointer;
+}
+
+body a:first-of-type {
+  margin: 0;
+  height: 84px;
+}
+
+img {
+  margin-bottom: 48px;
+  line-height: 2;
+  width: 191px;
+  height: 36px;
+}
+
+.container {
+  background-color: #fff;
+  color: #4a5568;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 0;
+  place-items: center;
+  padding: 32px 32px 40px;
+  max-width: 450px;
+  width: 95%;
+  height: 80%;
+  margin: 0;
+}
+
+.container h1 {
+  color: #083e9e;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container p {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: var(--form-width);
+  max-width: var(--max-form-width);
+  font-size: 16px;
+  /* overflow-y: auto; */
+}
+
+.container form label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* margin-top: 8px; */
+}
+
+.container form input {
+  background-color: #edf2f7;
+  padding: 12px 8px 12px 12px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a202c;
+  box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+  width: inherit;
+  max-width: calc(380px);
+  height: 48px;
+}
+
+.container form input:focus {
+  outline: 0;
+}
+
+.container form select {
+  background-color: #edf2f7;
+  margin-bottom: 2em;
+  height: 52px;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  color: #4a5568;
+}
+
+.container form button {
+  width: inherit;
+  max-width: calc(380px);
+  background-color: #083e9e;
+  color: #fff;
+  padding: 20px 40px 16px;
+  border-radius: 10px 10px 10px 0;
+  border: 0;
+  height: 57px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.container form button:hover {
+  background-color: #062b6f;
+  cursor: pointer;
+}
+
+body a:last-of-type {
+  color: #fff;
+  font: 12px "Source Sans Pro", sans-serif;
+  margin-top: 32px;
+  padding: 4px 12px;
+  text-decoration: none;
+}
+
+body a:last-of-type:hover {
+  color: #b3b3b3;
+}
+
+@media (max-width: 360px) {
+  :root {
+    --form-width: 70vw;
+  }
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: #edf2f7;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+
+
+.signup-container .signup-contents form .form-input .select-box .options-container .selected .radio,
+.signup-container .signup-contents form .form-input .select-box .options-container .option .radio {
+  display: none;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container .selected .label,
+.signup-container .signup-contents form .form-input .select-box .options-container .option .label {
+  cursor: pointer;
+}
